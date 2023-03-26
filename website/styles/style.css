@@ -1,0 +1,505 @@
+/*! htmlbase start */
+
+:root {
+    --main-color: white;
+    --black-color: black;
+    --border: 0.1rem solid rgba(73, 73, 148, 0.584);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+}
+
+span{
+    color: #daa520;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: #ccc;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+html::-webkit-scrollbar-track:hover{
+    background-color: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 2rem;
+    background-color: #000;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    border: 0.2rem solid; color: #000000;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.header .logo img {
+    height: 10rem;
+    
+}
+
+body {
+    background-color: var(--black-color);
+    
+
+}
+
+section {
+    padding: 0rem 10%;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(218, 165, 32, 0.412);
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: 1s ease;
+    
+}
+
+.btn:hover {
+    padding-right: 1rem;
+    border-right: 0.3rem solid; color: rgb(255, 255, 255);
+    border-bottom: 0.3rem solid; color: rgba(255, 255, 255, 0.993);
+    border-bottom-right-radius: 2rem;
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+/*! htmlbase end */
+
+/*! header start */
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    height: 7rem;
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+
+}
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: #daa520;
+    padding-bottom: 0.5rem;
+    color: goldenrod;
+    transition: 0.9s ease;
+}
+
+.header .buttons button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: transparent;
+    margin-left: 2rem;
+    color: white;
+}
+
+.header .buttons button:hover {
+    border-color: goldenrod;
+    border-bottom: 0.1rem solid; color: goldenrod;
+    color: goldenrod;
+
+}
+/*! header end */
+/*! home start*/
+
+.home {
+    
+    min-height: 100vh;
+    background: url(../images/7.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    background-color: rgba(0, 0, 0, 0.127);
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    background-position: center;
+    margin-top: -14.5rem;
+}
+
+.home .content h3:hover {
+    
+    padding-left: 0.5rem;
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+    transition: 0.9s ease;
+}
+
+.products .box-container .box:hover{
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+    transition: 0.9s ease;
+}
+
+.home .content p {
+    background-color: rgba(205, 191, 40, 0.27);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ccc;
+}
+
+.home .content p:hover{
+    transform: scale(1.1);
+    background-color: #daa520;
+    color: #ccc;
+    transition: 0.9s ease;
+}
+/*! home end*/
+
+/*! our product start*/
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.products h1{
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 0.1rem solid; color: #fff;
+}
+
+.products .box-container .box .box-head span{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #daa520;
+    border-left: 0.2rem solid; color: rgb(0, 0, 0);
+    border-top: 0.2rem solid; color: rgb(0, 0, 0);
+    border-top-left-radius: 2rem; color: rgb(0, 0, 0);
+}
+
+.products .box-container .box .box-head span:hover{
+    transform: scale(1.1);
+    transition: 0.9s ease;
+}
+
+.products .box-container .box .box-head p{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    text-decoration: none;
+    color: #544f458a;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.products .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.products .box-container .box:hover img{
+    transform: scale(0.9);
+    transition: 0.2s ease;
+}
+
+.products .box-container .box {
+    padding: 1rem;
+    background-color: #daa520;
+    border-radius: 2rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.products .box-container .box .product-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(218, 165, 32, 0.412);
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: 1s ease;
+}
+
+.products .box-container .box .product-btn:hover{
+    padding-right: 1rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration-color: rgba(0, 0, 0, 0.345);
+    border-right: 0.3rem solid; color: rgb(0, 0, 0);
+    border-bottom: 0.3rem solid; color: rgba(0, 0, 0, 0.993);
+    border-bottom-right-radius: 2rem;
+    transition: 1s ease;
+    transform: scale(1.1);
+}
+/*! our product end*/
+
+/*! about start*/
+.about h1{
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 0.1rem solid; color: #fff;
+
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    background-color: #daa52058;
+    border-radius: 2rem;
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row img{
+    border: 0.5rem solid; color: #ccc;
+    width: 100%;
+    border-radius: 2rem;
+    z-index: -150;
+}
+
+.about .row .content {
+    flex: 1 1 65rem;
+}
+
+.about .row .content h3 {
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #ffffff75;
+    color: #fff;
+    border-radius: 2rem; color: #daa520;
+    transition: 0.9s ease;
+    border: 0.3rem solid;color: #503b07;
+    
+    
+}
+
+
+
+
+.about .row .content p{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #ccc;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #daa5207a;
+    padding: 1rem;
+}
+
+.about .row .image .about-btn{
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #daa520;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.9s ease;
+    opacity: 65%;
+}
+
+.about .row .image .about-btn:hover{
+    background-color: #000;
+    color: #fff;
+    border:  0.2rem solid; color: #836313af;
+    border-top-right-radius: 2rem; color: #836313af;
+    border-bottom-left-radius: 2rem; color: #9c740e;
+    transition: 0.9s ease;
+    opacity: 100%;
+    
+}
+
+/*! about end*/
+
+/*! contact start*/
+.contact .row{
+    border-radius: 3rem;
+    border: 0.4rem solid;color: #503b07;
+    display: flex;
+    background-color: var(--main-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact  h1{
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 0.1rem solid; color: #fff;
+
+}
+
+.contact .row .map{
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s ease;
+}
+
+.contact .row .map:hover{
+    background-color: #000;
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #000;
+
+}
+
+.contact .row form .inputbox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid; color: #000;
+    background-color: #ccc;
+    transition: 1s ease;
+}
+
+.contact .row form .inputbox:hover{
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.contact .row form .inputbox i{
+    color: #daa520;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    background-color: transparent;
+}
+
+.contact .row form .inputbox i:hover{
+    transition: 1s ease;
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+.contact .row form .inputbox input{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: none;
+    background-color: transparent;
+    transition: 1s ease;
+}
+
+.contact .row form .inputbox input:hover{
+    transition: 1s ease;
+    background-color: transparent;
+    color: #fff;
+}
+
+.contact .row form .contact-btn{
+    padding: 1rem;
+    font-size: 3rem;
+    border: 0.1rem solid; color: #9c740e;
+    background-color: #daa520;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    transition: 0.9s ease;
+}
+
+.contact .row form .contact-btn:hover{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 0.1rem solid; color: #000000;
+    color: #daa520;
+    transition: 0.9s ease;
+    transform: scale(0.9);
+    border-radius: 3rem;
+    box-shadow: 4px 1px 62px 26px rgba(173,162,83,0.74);
+}
+
+/*! contact end*/
